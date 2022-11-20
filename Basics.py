@@ -35,3 +35,25 @@ if __name__ == '__main__':
     n = int(input())
     int_list = [x for x in range(1,n+1)]
     print(*int_list,sep='')
+
+#Finding the minimum and maximum in array :
+
+import numpy as np
+
+if __name__ == '__main__':
+    
+    numpy_array = []
+    x, y = input().split()
+    for row in range(int(x)):
+        inner_list =[]
+        for col in range(int(y)):
+            # print('inside inner')
+            x1 = input()
+            inner_list.append(int(x1))
+        numpy_array.append(inner_list)
+
+    # print(numpy_array)
+
+    init_array = np.array(numpy_array)
+    min_array = np.min(init_array, axis = 1)
+    print(max(min_array))
