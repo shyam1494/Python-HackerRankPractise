@@ -22,3 +22,10 @@ if __name__ == '__main__':
         print('Not Weird')
     else:
         print('Weird')
+        
+#list comprehension
+if __name__ == '__main__':
+    n = int(input())
+    lst_comprehension = [x**2 for x in range(0,n)]
+    for i in lst_comprehension:
+        print(i)
