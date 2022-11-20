@@ -29,3 +29,9 @@ if __name__ == '__main__':
     lst_comprehension = [x**2 for x in range(0,n)]
     for i in lst_comprehension:
         print(i)
+
+#Unpacking the values:
+if __name__ == '__main__':
+    n = int(input())
+    int_list = [x for x in range(1,n+1)]
+    print(*int_list,sep='')
